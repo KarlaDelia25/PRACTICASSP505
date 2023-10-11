@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a=parseFloat(prompt("Introduce el primer lado"));
+       let b=parseFloat(prompt("Introduce el segundo lado"));
+       let c=parseFloat(prompt("Introduce el tercer lado"));
+       let an=parseFloat(prompt("Introduce ángulo"));
+
+       if(a==b && b==c){
+        document.write("El triángulo es equilátero");
+        }else if(a==b || b==c || a==c){
+            document.write("El triángulo es isóceles");
+        }else if(an==90 && a&&b < c)
+        document.write("El triángulo es triangúlo rectángulo");
+        
+        else {
+            document.write("El triángulo es escaleno")
+        }
+
+       
+
+    </script>
+</body>
+</html>
